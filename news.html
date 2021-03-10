@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тамада</title>
+    <!--    стили -->
+    <link rel="stylesheet" href="styles/bootstrap-grid.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        :root {
+            --red: #F9bcbc;
+            --body-color: #7D808;
+        }
+        html{
+            font-size: 10px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            background-color: bisque;
+        }
+        h1, h2, h3, h4, h5, h6{
+            margin: 0;
+            padding: 0;
+
+        }
+        .header{
+            height: 7rem;
+            background-color: #F9bcbc;
+        }
+        .header .flex-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 7rem;
+        }
+        .navigation ul{
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            column-gap: 5rem;
+
+        }
+        .navigation ul li{
+            font-size: 1.5rem;
+            color: blue;
+        }
+        .navigation ul li a {
+            text-decoration: none;
+            color: blue;
+        }
+        .navigation ul li a:hover {
+            color: red;
+            cursor: pointer;
+        }
+        .main{
+            margin-top: 6rem;
+        }
+        .content, .sidebar{
+            background-color: white;
+
+            border-radius: 0.5rem;
+            padding: 3rem 2rem;
+            min-height: 180rem;
+        }
+        .heading{
+            font-size: 3.6rem;
+        }
+        .post-image{
+            width: 100%;
+        }
+        .post-image img{
+            width: 100%;
+        }
+        .post-title {
+            margin-top: 1.9rem;
+        }
+        .post-date{
+            margin-top: 1.4rem;
+            display: block;
+        }
+        .post-description{
+            font-size: 1.8rem;
+        }
+        .post-info{
+            margin-left: 1rem;
+        }
+        .post{
+            margin-top: 4rem;
+        }
+        .category{
+            font-size: 2rem;
+        }
+        .categories{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .categories li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            row-gap: 2.5rem;
+            height: 3rem;
+        }
+        .category-title{
+            font-size: 1.6rem;
+        }
+        .category-badge{
+            font-size: 1.6rem;
+            background: red;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+        .categories li:first-child{
+            margin-top: 1.5rem;
+        }
+        .footer{
+            height: 7rem;
+            background: #5a5a5a;
+            margin-top: 10rem;
+        }
+        .footer span{
+            color: white;
+            font-size: 1.5rem;
+        }
+        .flex-container{
+            height: 7rem;
+            display: flex;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+<!--шапка-->
+<header class="header">
+    <div class="container">
+        <div class="flex-container">
+            <a href="/">
+                <img width="83" height="60" src="img/logo.png" alt="">
+            </a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Рестораны</a></li>
+                    <li><a href="news.html">Тамада</a></li>
+                    <li><a href="about.html">эстрадные певцы</a></li>
+                    <li><a href="contacts.html">Акыны</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<!--контент-->
+<main class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="content">
+                    <h1 class="heading">Тамада</h1>
+                    <article class="post">
+                        <div class="post-image"> <img src="img/imageMairambek.jpg" alt=""></div>
+                        <div class="post-info"><h2 class="post-title">ТАМАДА БИШКЕК Майрамбек Осмонов тел.0555 0019 13</h2>
+                            <span class="post-date">17.02.2021г</span>
+                            <p class="post-description">Майрамбек Осмонов тамада ТАМАДАЛАР ОРДОСУ 0772 263 463.</p>
+                        </div>
+
+
+                    </article>
+                    <article class="post">
+                        <div class="post-image"> <img src="img/imageYrmat.jpg" alt=""></div>
+                        <div class="post-info"><h2 class="post-title">Урмат Борченов Ведущий ТАМАДА БИШКЕК</h2>
+                            <span class="post-date">17.02.2021г</span>
+                            <p class="post-description">Тамада Урмат Борченов ТАМАДАЛАР ОРДОСУ 0772 263 463</p>
+                        </div>
+
+
+                    </article>
+                    <article class="post">
+                        <div class="post-image"> <img src="img/imageDastan.jpg" alt=""></div>
+                        <div class="post-info"><h2 class="post-title">ТАМАДА БИШКЕК ПАРОДИСТ Дастан Алдаяров тел.0555 00 19 13</h2>
+                            <span class="post-date">17.02.2021г</span>
+                            <p class="post-description">АТУУЛДУК СЕЗИМДЕРДИ ОЙГОТКОН ТАМАДА ДАСТАН АЛДАЯРОВ</p>
+                        </div>
+
+
+                    </article>
+                </div>
+            </div>
+            <aside class="col-md-4">
+                <div class="sidebar">
+                    <h2 class="category">Категория</h2>
+                    <ul class="categories">
+                        <li>
+                            <span class="category-title">Стажы Работ</span>
+                            <div class="category-badge">15</div>
+                        </li>
+                        <li>
+                            <span class="category-title">Награды</span>
+                            <div class="category-badge">3</div>
+                        </li>
+                        <li>
+                            <span class="category-title">стоимость шоу</span>
+                            <div class="category-badge">12000</div>
+                        </li>
+                        <li>
+                            <span class="category-title">Топ 10</span>
+                            <div class="category-badge">10</div>
+                        </li>
+                    </ul>
+
+                </div>
+            </aside>
+        </div>
+    </div>
+</main>
+<!--Футер-->
+<footer class="footer">
+    <div class="container">
+        <div class="flex-container"><span>Разработана Акылбеком</span></div>
+    </div>
+</footer>
+</body>
+</html>
